@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invalid User</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea, #764ba2, #43cea2);
+}
+header {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+.nav-actions form button.logout {
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    transition: 0.3s ease;
+}
+.nav-actions form button.logout:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.message-box {
+    width: 400px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    text-align: center;
+}
+.message-box h2 {
+    margin-bottom: 20px;
+    color: #f87171;
+    font-size: 26px;
+    font-weight: 700;
+}
+.message-box p {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.message-box form button, .message-box a.btn-link {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(255,154,158,0.4);
+}
+.message-box form button:hover, .message-box a.btn-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255,154,158,0.7);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MyShoppingCart</div>
+    <div class="nav-actions">
+        <form action="logout" method="get">
+            <button type="submit" class="logout">Logout</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <div class="message-box">
+        <h2>Invalid User</h2>
+        <p>Your payment could not be processed due to invalid details.</p>
+        <a href="paymentBuy.jsp" class="btn-link">Try Again</a>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 MyShoppingCart. All rights reserved.
+</footer>
+
+</body>
+</html>

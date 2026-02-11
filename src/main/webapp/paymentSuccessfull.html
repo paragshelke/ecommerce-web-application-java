@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payment Successful - MyShoppingCart</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2, #43cea2);
+    color: #fff;
+    text-align: center;
+}
+header {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+header .nav-actions form button.logout {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    transition: 0.3s ease;
+}
+header .nav-actions form button.logout:hover {
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(14px);
+    padding: 45px 35px;
+    border-radius: 26px;
+    box-shadow: 0 30px 55px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.9s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(35px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.card .check-circle {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #22c55e, #4ade80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 12px 28px rgba(34, 197, 94, 0.5);
+}
+.card h2 {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.card p {
+    color: #f1f5f9;
+    font-size: 15.5px;
+    line-height: 1.8;
+    margin-bottom: 34px;
+}
+.card .btn-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card .btn-group form button {
+    flex: 1;
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.35s;
+}
+.card .btn-buy {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    box-shadow: 0 10px 24px rgba(255,154,158,0.5);
+}
+.card .btn-logout {
+    background: linear-gradient(135deg, #ff6a6a, #ff3c3c);
+    color: white;
+    box-shadow: 0 10px 24px rgba(255,60,60,0.45);
+}
+.card .btn-group form button:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MyShoppingCart</div>
+    <div class="nav-actions">
+        <form action="logout" method="get">
+            <button type="submit" class="logout">Logout</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <div class="card">
+        <div class="check-circle">✓</div>
+        <h2>Payment Successful</h2>
+        <p>
+            Your payment has been processed successfully 🎉<br>
+            Thank you for trusting us with your purchase.<br>
+            We are preparing your order for delivery!
+        </p>
+        <div class="btn-group">
+            <form action="viewProducts" method="get">
+                <button class="btn-buy">Buy More</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 MyShoppingCart. All rights reserved.
+</footer>
+
+</body>
+</html>

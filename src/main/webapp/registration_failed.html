@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration Failed | MyShoppingCart</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea, #764ba2, #43cea2);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-actions button {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-actions button:hover {
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.message-box {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-box h2 {
+    color: #ffb4b4;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.message-box p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.message-box button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(255,154,158,0.4);
+}
+
+.message-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255,154,158,0.7);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyShoppingCart</div>
+    <div class="nav-actions">
+        <form action="logout" method="get">
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <div class="message-box">
+        <h2>Registration Failed</h2>
+        <p>There was an error while registering your account. Please try again.</p>
+        <form action="customer_register.html" method="get">
+            <button type="submit">Try Again</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 MyShoppingCart. All rights reserved.
+</footer>
+
+</body>
+</html>

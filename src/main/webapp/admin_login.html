@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login - MyShoppingCart</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #667eea, #764ba2, #43cea2);
+}
+header {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    padding: 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+.nav-actions form button.logout {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: #fff;
+    transition: 0.3s ease;
+}
+.nav-actions form button.logout:hover {
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: calc(100vh - 80px - 40px);
+}
+.login-box {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+h2 {
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 26px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+input[type="text"], input[type="password"] {
+    width: calc(100% - 28px);
+    padding: 14px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.8);
+    color: #333;
+    display: block;
+    transition: 0.3s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #ff9a9e;
+    box-shadow: 0 0 10px rgba(255,154,158,0.5);
+    background: #fff;
+}
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(255,154,158,0.4);
+}
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255,154,158,0.7);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    color: black;
+    text-align: center;
+    padding: 8px 0;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    z-index: 1000;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MyShoppingCart</div>
+    <div class="nav-actions">
+        <form action="logout" method="get">
+            <button type="submit" class="logout">Logout</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <div class="login-box">
+        <h2>Admin Login</h2>
+        <form action="adminLogin" method="post">
+            <div class="input-group">
+                <input type="text" name="email" placeholder="Enter Admin Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    &copy; 2025 MyShoppingCart. All rights reserved.
+</footer>
+
+</body>
+</html>
