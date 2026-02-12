@@ -55,7 +55,18 @@ The project follows MVC architecture:
 <img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/19569529-c3ac-40d0-97fa-40859aae1bc2" />
 <img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/70e890d0-1b78-43db-9d7d-783f75d5f926" />
 <img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/5ade6184-bbe5-4a2c-acef-fd39b61bcb28" />
-<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/69501e69-9480-4c37-ae15-982837298bcd" />
+<img width="1920" height="1080" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/05ef7810-dfa7-42db-85f2-32ffe60949d4" />
+<img width="1920" height="1080" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/84b99973-aa07-4e6e-8669-978d52fbf00a" />
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/b9397426-5b9c-4d8e-97d8-891fb0a0a1d0" />
+<img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/5bc322d8-19f5-4788-854b-d1299f6b2331" />
+<img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/2a1ed541-c3a6-4f5d-bdf8-16affaf2a724" />
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/0440e32e-7e13-4704-ae1a-306ab04100da" />
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/5a7b677c-8bdb-48f0-85be-f702b0464dbf" />
+<img width="1920" height="1080" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/e606e5b5-e660-4cc0-9ecd-8bcaabc6bb11" />
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/bb929e05-1fc2-4028-b09d-a17307766b08" />
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/af5c2b3d-6b67-4aad-a72c-22e4f38ff3ea" />
+<img width="1920" height="1080" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/6b2176ae-6376-4038-a82f-e134504dd109" />
+
 
 
 
