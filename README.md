@@ -91,9 +91,6 @@ The project follows MVC architecture:
 
 - `src/` → Java source files including Servlets, DAO, Service, and Utility classes
 - `WebContent/` → JSP pages, HTML, CSS, JS files
-- `customer/` → Customer dashboard and functionalities
-- `admin/` → Admin dashboard and functionalities
-- `common/` → Shared JSP pages like headers and footers
 - `database.sql` → SQL script to create database and tables
 - `README.md` → Project documentation
 
