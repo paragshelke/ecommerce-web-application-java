@@ -51,6 +51,10 @@ The project follows MVC architecture:
 
 ---
 
+## ScreenShots
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/19569529-c3ac-40d0-97fa-40859aae1bc2" />
+
+
 ## How to Run the Project
 
 1. **Clone the repository** from GitHub: 
