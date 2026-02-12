@@ -53,6 +53,10 @@ The project follows MVC architecture:
 
 ## ScreenShots
 <img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/19569529-c3ac-40d0-97fa-40859aae1bc2" />
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/70e890d0-1b78-43db-9d7d-783f75d5f926" />
+<img width="1920" height="1080" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/5ade6184-bbe5-4a2c-acef-fd39b61bcb28" />
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/69501e69-9480-4c37-ae15-982837298bcd" />
+
 
 
 ## How to Run the Project
